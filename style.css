@@ -1,0 +1,143 @@
+* {
+  font-family: "Source Sans Pro", sans-serif; /*шрифт*/
+}
+body {
+  background-color: #646464; /* цвет фона */
+  display: flex; /*как будут отабражаться элементы в контейнере*/
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: rgb(255, 231, 16); /* цвет текста */
+  position: absolute; /*где стоит элемент*/
+  margin: 9px;
+}
+p {
+  margin: 30px;
+  font-size: 23px; /*шрифт*/
+  color: rgb(21, 64, 255); /* цвет текста */
+}
+div {
+  /* border:2px solid rgb(255, 0, 0); */
+  width: 15%; /*ширена*/
+  min-width: 260px;
+  height: 100%; /*высота*/
+  overflow: hidden; /*картинку обрезать ?*/
+  border-radius: 10px; /*скругляет границу*/
+  margin: 12px; /* отступление элеемента друг от друга*/
+  box-shadow: 7px 9px 30px 0px rgba(0, 0, 0, 0.34); /*тени*/
+}
+img {
+  height: 400px; /*высота*/
+}
+.kards {
+  background-color: seashell; /*цвет фона*/
+  display: flex; /*как отображаеться*/
+  flex-wrap: wrap; /*писать элементы в 1 страку или в несколько*/
+  justify-content: space-between; /*выравнивание по флексу*/
+  width: 80vw; /*ширена*/
+}
+h2 {
+  font-size: 45px; /*шрифт*/
+  margin: 34px 10px 30px 50px; /*отступ*/
+}
+a {
+  text-decoration: none;
+}
+.menu {
+  justify-content: center;
+  position: sticky;
+  top: 20px;
+  bottom: 33px;
+  z-index: 4; /*приоретет*/
+}
+.baner {
+  height: 690px; /*высота*/
+  background-image: url(img/banner.jpg); /*фон*/
+  background-size: 100%; /*размер фона*/
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex; /*как отображаеться*/
+  flex-direction: column-reverse; /*ка распалагается элемент в каробке*/
+}
+.baner p {
+  font-size: 89px; /*шрифт*/
+  color: rgb(255, 255, 255); /*цвет*/
+  font-family: "Source Sans Pro", sans-serif; /*шрифт*/
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.34); /*тень*/
+  margin: 0px 0 35px 57px; /*отступ*/
+}
+h3 {
+  font-size: 89px;
+  color: rgb(255, 255, 255); /*цвет*/
+  text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.34); /*тень*/
+  font-family: "Source Sans Pro", sans-serif; /*шрифт*/
+}
+.verx {
+  font-size: 25px;
+  color: rgb(255, 0, 0); /*цвет*/
+  width: 70px;
+  height: 50px;
+  position: fixed;
+  left: 12px;
+  z-index: 1; /*приоретет*/
+  bottom: 20px;
+  text-decoration: none;
+}
+.verx-knopka {
+  background-color: blue;
+  display: flex;
+  justify-content: center; /*вырвнять поь горизонтали*/
+  align-items: center; /*выравнивание по вертикали*/
+}
+.youtube {
+  font-size: 25px;
+  color: rgb(255, 0, 0); /*цвет*/
+  width: 47px;
+  height: 122px;
+  position: fixed;
+  right: 15px;
+}
+.youtube-knopka {
+  font-size: 100px;
+  color: rgb(255, 0, 0); /*цвет*/
+  width: 122px;
+  height: 122px;
+  position: fixed; /*прийепить на экран зaкрепить позийию */
+  right: 15px;
+  bottom: 20px;
+}
+.kard {
+  width: 100%;
+  max-width: 350px;
+}
+.kard img,
+.kard iframe {
+  width: 25vw;
+  height: 13vw;
+}
+@media screen and (max-width: 700px) {
+  .baner {
+    background-size: auto 100%;
+  }
+}
+.kl {
+  margin: 45px 0 0 0;
+  height: 122px;
+  width: 100%;
+  background-color: rgb(0, 255, 34);
+  color: rgb(255, 0, 0); /*цвет*/
+  justify-content: center; /*вырвнять поь горизонтали*/
+  align-items: center; /*выравнивание по вертикали*/
+  display: flex;
+  font-size: 45px; /*шрифт*/
+}
+.foto img {
+  width: 500px;
+  width: 25%;
+}
+.foto {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+}
